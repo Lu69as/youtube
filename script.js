@@ -3,7 +3,7 @@ document.querySelectorAll("nav").forEach((e) => {
         <div class="navItems">
             <a href="https://www.youtube.com/@lu69as" target="_blank" rel="noreferer"><h1 class="logo"><i class="fa-brands fa-youtube"></i> Lu69as</h1></a>
             <ul>
-                <a href="/">Home</a>
+                <a href="./index.html">Home</a>
                 <a href="./story.html">The story</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="./contact.html">Contact me</a>
