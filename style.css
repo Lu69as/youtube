@@ -73,6 +73,7 @@ body {
         transition: 200ms;
         border: solid 5px #FF0033;
         border-radius: 9em;
+        cursor: pointer;
 
         font-size: 18px;
         letter-spacing: 1px;
@@ -800,8 +801,15 @@ article#contact {
             transform: translateX(-20px);
         }
     }
-    nav ul { flex-wrap: wrap; }
+    nav ul, nav .navItems { flex-wrap: wrap; gap: 25px; justify-content: center; }
+
     #story h3::after, #story h3::before { display: none; }
     #story .time h3 { box-shadow: none !important; border-radius: 10px 10px 0 0 !important; }
     #story .time { margin-inline: 0 !important; }
+
+    #contact .form-container {
+        width: 100% !important;
+
+        .shapes { display: none; }
+    }
 }

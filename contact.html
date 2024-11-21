@@ -47,7 +47,9 @@
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
     
                 <div class="submit-container">
-                  <button type="button" class="cancel button">Avbryt</button>
+                  <button type="button" class="cancel button" 
+                    onclick="this.parentElement.parentElement.querySelectorAll('input, textarea').forEach((e) => e.value = '')"
+                    >Cancel</button>
                   <button type="submit" class="button">Send</button>
                 </div>
               </form>
