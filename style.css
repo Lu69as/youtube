@@ -797,9 +797,11 @@ article#contact {
         .stats ul { 
             flex-wrap: wrap;
             justify-content: center !important;
+            transform: translateX(-20px);
         }
     }
-    nav ul a:nth-child(n+2), #story h3::after, #story h3::before { display: none; }
+    nav ul { flex-wrap: wrap; }
+    #story h3::after, #story h3::before { display: none; }
     #story .time h3 { box-shadow: none !important; border-radius: 10px 10px 0 0 !important; }
     #story .time { margin-inline: 0 !important; }
 }

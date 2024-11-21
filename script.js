@@ -94,4 +94,7 @@ document.querySelectorAll("a").forEach((e) => {
         e.classList.add("hyperlink-ani");
         setTimeout(() => { e.classList.remove("hyperlink-ani"); }, 400);
     })
+
+    if (location.href.includes("lu69as") && e.getAttribute("src").includes("html"))
+        e.setAttribute("src", "/youtube" + e.getAttribute("src"))
 })
