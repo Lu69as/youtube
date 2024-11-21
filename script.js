@@ -19,7 +19,7 @@ document.querySelectorAll("footer").forEach((e) => {
             <a style="background: #FF0033; color: #fff" href="https://youtube.com/@lu69as" target="_blank" rel="noreferer"><i class="fa-brands fa-youtube"></i></a>
             <a style="background: linear-gradient(45deg, #F98629, #EB2482); color: #fff" href="https://instagram.com/lu69as" target="_blank" rel="noreferer"><i class="fa-brands fa-instagram"></i></a>
             <a style="background: #222; color: #fff" href="https://x.com/lu69as" target="_blank" rel="noreferer"><i class="fa-brands fa-x-twitter"></i></a>
-            <a style="background: #0D1117; color: #fff" href="https://x.com/lu69as" target="_blank" rel="noreferer"><i class="fa-brands fa-github"></i></a>
+            <a style="background: #0D1117; color: #fff" href="https://github.com/Lu69as/" target="_blank" rel="noreferer"><i class="fa-brands fa-github"></i></a>
         </div>
         <div class="main">
             <div class="about">
@@ -46,7 +46,7 @@ document.querySelectorAll("footer").forEach((e) => {
             </div>
             <div class="copyright">
                 Copyright &copy; Lukas Okkenhaug <span style="margin-left: 5px;"><img src onerror="this.parentElement.innerHTML = new Date().getFullYear()"></span> | 
-                Designed by <a href="https://lu69as.github.io" target="_blank" rel="noreferer">Lukas Okkenhaug</a>
+                Designed by <a href="https://lukasokken.com" target="_blank" rel="noreferer">Lukas Okkenhaug</a>
             </div>
         </div>
     `;
