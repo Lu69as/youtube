@@ -4,9 +4,9 @@ document.querySelectorAll("nav").forEach((e) => {
             <a href="https://www.youtube.com/@lu69as" target="_blank" rel="noreferer"><h1 class="logo"><i class="fa-brands fa-youtube"></i> Lu69as</h1></a>
             <ul>
                 <a href="/">Home</a>
-                <a href="/story.html">The story</a>
-                <a href="/faq.html">FAQ</a>
-                <a href="/contact.html">Contact me</a>
+                <a href="./story.html">The story</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./contact.html">Contact me</a>
             </ul>
         </div>
 
@@ -94,7 +94,4 @@ document.querySelectorAll("a").forEach((e) => {
         e.classList.add("hyperlink-ani");
         setTimeout(() => { e.classList.remove("hyperlink-ani"); }, 400);
     })
-
-    if (location.href.includes("lu69as") && e.getAttribute("src").includes("html"))
-        e.setAttribute("src", "/youtube" + e.getAttribute("src"))
 })
