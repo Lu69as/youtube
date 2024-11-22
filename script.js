@@ -71,23 +71,32 @@ document.addEventListener("mousemove", (e) => {
         img.style.transform = `translate(${(e.clientX - img.getBoundingClientRect().left) / s}px, 
         ${0 - (e.clientY - img.parentElement.getBoundingClientRect().top) / s}px)`
     });
+
+    document.querySelectorAll(".timeline-container .img-container img").forEach((img) =>  {
+        if (img.getBoundingClientRect().top < 100) {
+            img.style.transform = `translate(${(e.clientX - img.getBoundingClientRect().left) / s}px, 
+                ${(e.clientY - img.parentElement.getBoundingClientRect().top) / s}px)`
+        }
+    });
 });
 
-document.querySelectorAll("#faq .question").forEach((e) => {
-    e.style.maxHeight = e.offsetHeight + "px";
-    e.classList.add("closed");
-
-    e.addEventListener("click", () => {
-        if (e.classList[1] == "closed") {
-            document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
-            e.classList.remove("closed");
-        }
-        else {
-            document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
-        }
-
+window.onload = () => {
+    document.querySelectorAll("#faq .question").forEach((e) => {
+        e.style.maxHeight = e.offsetHeight + "px";
+        e.classList.add("closed");
+    
+        e.addEventListener("click", () => {
+            if (e.classList[1] == "closed") {
+                document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
+                e.classList.remove("closed");
+            }
+            else {
+                document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
+            }
+    
+        });
     });
-})
+}
 
 document.querySelectorAll("a").forEach((e) => {
     e.addEventListener("mouseleave", () => { 
