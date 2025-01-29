@@ -3,10 +3,10 @@ document.querySelectorAll("nav").forEach((e) => {
         <div class="navItems">
             <a href="https://www.youtube.com/@lu69as" target="_blank" rel="noreferer"><h1 class="logo"><i class="fa-brands fa-youtube"></i> Lu69as</h1></a>
             <ul>
-                <a href="./index.html">Home</a>
-                <a href="./story.html">The story</a>
-                <a href="./faq.html">FAQ</a>
-                <a href="./contact.html">Contact me</a>
+                <a href="/">Home</a>
+                <a href="/story">The story</a>
+                <a href="/faq">FAQ</a>
+                <a href="/contact">Contact me</a>
             </ul>
         </div>
 
@@ -71,29 +71,17 @@ document.addEventListener("mousemove", (e) => {
         img.style.transform = `translate(${(e.clientX - img.getBoundingClientRect().left) / s}px, 
         ${0 - (e.clientY - img.parentElement.getBoundingClientRect().top) / s}px)`
     });
-
-    document.querySelectorAll(".timeline-container .img-container img").forEach((img) =>  {
-        if (img.getBoundingClientRect().top < 100) {
-            img.style.transform = `translate(${(e.clientX - img.getBoundingClientRect().left) / s}px, 
-                ${(e.clientY - img.parentElement.getBoundingClientRect().top) / s}px)`
-        }
-    });
 });
 
 window.onload = () => {
-    document.querySelectorAll("#faq .question").forEach((e) => {
-        e.style.maxHeight = e.offsetHeight + "px";
-        e.classList.add("closed");
-    
+    document.querySelectorAll("#faq .question").forEach((e) => {    
         e.addEventListener("click", () => {
             if (e.classList[1] == "closed") {
                 document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
                 e.classList.remove("closed");
             }
-            else {
+            else
                 document.querySelectorAll("#faq .question").forEach((q) => q.classList.add("closed"));
-            }
-    
         });
     });
 }
