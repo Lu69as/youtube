@@ -92,3 +92,18 @@ document.querySelectorAll("a").forEach((e) => {
         setTimeout(() => { e.classList.remove("hyperlink-ani"); }, 400);
     })
 })
+
+document.addEventListener("scroll", () => {
+    let navbar = document.querySelector("nav");
+    if (navbar.getBoundingClientRect().top == 10) navbar.classList.add("sticked");
+    else navbar.classList.remove("sticked");
+});
+
+document.querySelectorAll("footer .someLinks a").forEach((a) => a.addEventListener("mouseenter", (evt) => {
+    if (evt.layerX > a.offsetWidth / 2)
+        a.style.transform = "scale(1.05) rotate(5deg)";
+    else
+        a.style.transform = "scale(1.05) rotate(-5deg)";
+
+    a.addEventListener("mouseleave", () => a.style.transform = "scale(1) rotate(0deg)", { once: true })
+}));
